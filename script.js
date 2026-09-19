@@ -6,18 +6,18 @@ const products = [
     label: "Mint Condition",
     price: 399,
     stock: 1,
-    image1: "https://gothamnightwing.github.io/hotwheelssshunter/0F5359FC-E5DD-40B8-8F15-2A7750CEF570.png",
-    image2: "https://gothamnightwing.github.io/hotwheelssshunter/12B64CFF-C0B0-4017-BC9C-985E025CDE51.png"
+    image1: "./0F5359FC-E5DD-40B8-8F15-2A7750CEF570.png",
+    image2: "./12B64CFF-C0B0-4017-BC9C-985E025CDE51.png"
   },
   {
     id: 2,
-    name: "'73 Honda Civic Custom",
+    name: "’73 Honda Civic Custom",
     type: "vintage-club",
     label: "Mint Condition",
     price: 349,
     stock: 1,
-    image1: "https://gothamnightwing.github.io/hotwheelssshunter/1A6DAA59-D4D1-436A-A678-BE2EBC8224E9.png",
-    image2: "https://gothamnightwing.github.io/hotwheelssshunter/2ACDBFEF-1346-4703-84B2-58814935CDB4.png"
+    image1: "./1A6DAA59-D4D1-436A-A678-BE2EBC8224E9.png",
+    image2: "./2ACDBFEF-1346-4703-84B2-58814935CDB4.png"
   },
   {
     id: 3,
@@ -26,18 +26,18 @@ const products = [
     label: "Mint Condition",
     price: 399,
     stock: 2,
-    image1: "https://gothamnightwing.github.io/hotwheelssshunter/34B64E38-91CA-4415-A182-60B8F5617530.png",
-    image2: "https://gothamnightwing.github.io/hotwheelssshunter/43723499-37FD-46FC-9D8D-2136C953D917.png"
+    image1: "./34B64E38-91CA-4415-A182-60B8F5617530.png",
+    image2: "./43723499-37FD-46FC-9D8D-2136C953D917.png"
   },
   {
     id: 4,
-    name: "'17 Audi RS 6 Avant",
+    name: "’17 Audi RS 6 Avant",
     type: "mainline",
     label: "Mint Condition",
     price: 299,
     stock: 1,
-    image1: "https://gothamnightwing.github.io/hotwheelssshunter/47419579-3F9B-4A23-902B-31432C3A76EE.png",
-    image2: "https://gothamnightwing.github.io/hotwheelssshunter/49055DF6-201A-4140-9814-A23DA03EBB94.png"
+    image1: "./47419579-3F9B-4A23-902B-31432C3A76EE.png",
+    image2: "./49055DF6-201A-4140-9814-A23DA03EBB94.png"
   },
   {
     id: 5,
@@ -46,8 +46,8 @@ const products = [
     label: "Mint Condition",
     price: 850,
     stock: 1,
-    image1: "https://gothamnightwing.github.io/hotwheelssshunter/5B762D5A-1C63-4B1F-9E52-9F958EBF5C66.png",
-    image2: "https://gothamnightwing.github.io/hotwheelssshunter/61A0BA9F-D761-4522-A871-4B489074ADD4.png"
+    image1: "./5B762D5A-1C63-4B1F-9E52-9F958EBF5C66.png",
+    image2: "./61A0BA9F-D761-4522-A871-4B489074ADD4.png"
   },
   {
     id: 6,
@@ -56,8 +56,8 @@ const products = [
     label: "Mint Condition",
     price: 249,
     stock: 1,
-    image1: "https://gothamnightwing.github.io/hotwheelssshunter/678EDAF0-8CF8-4625-971A-4C05031AD9D4.png",
-    image2: "https://gothamnightwing.github.io/hotwheelssshunter/704104B9-2398-4278-B429-E16017440192.png"
+    image1: "./678EDAF0-8CF8-4625-971A-4C05031AD9D4.png",
+    image2: "./704104B9-2398-4278-B429-E16017440192.png"
   },
   {
     id: 7,
@@ -66,8 +66,8 @@ const products = [
     label: "Mint Condition",
     price: 249,
     stock: 1,
-    image1: "https://gothamnightwing.github.io/hotwheelssshunter/7D31908B-3D5E-4845-BB94-EA3B7015636F.png",
-    image2: "https://gothamnightwing.github.io/hotwheelssshunter/9CBEC50F-EF65-4D38-9135-1F150238A678.png"
+    image1: "./7D31908B-3D5E-4845-BB94-EA3B7015636F.png",
+    image2: "./9CBEC50F-EF65-4D38-9135-1F150238A678.png"
   },
   {
     id: 8,
@@ -76,8 +76,8 @@ const products = [
     label: "Mint Condition",
     price: 199,
     stock: 1,
-    image1: "https://gothamnightwing.github.io/hotwheelssshunter/A4299B56-BA4A-4499-8B3C-8C65AC21C989.png",
-    image2: "https://gothamnightwing.github.io/hotwheelssshunter/D66DB3C9-012E-4C59-850A-11CB4DAF7AE5.png"
+    image1: "./A4299B56-BA4A-4499-8B3C-8C65AC21C989.png",
+    image2: "./D66DB3C9-012E-4C59-850A-11CB4DAF7AE5.png"
   }
 ];
 
