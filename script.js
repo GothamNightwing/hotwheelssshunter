@@ -120,7 +120,10 @@ function render() {
   const list = products.filter(p =>
     (activeCategory === "all" ||
      p.type === activeCategory) &&
-    p.name.toLowerCase().includes(q)
+  (
+  p.name.toLowerCase().includes(q) ||
+  p.series.toLowerCase().includes(q)
+)
   );
 
   productsEl.innerHTML = list.map(p => `
@@ -186,10 +189,17 @@ function clearFilters() {
 }
 
 
-search.addEventListener(
-  "input",
-  render
-);
+search.addEventListener("input", () => {
+  render();
+
+  if (search.value.trim()) {
+    document.querySelector(".categories").classList.add("hidden");
+    document.getElementById("stock").classList.add("searching");
+  } else {
+    document.querySelector(".categories").classList.remove("hidden");
+    document.getElementById("stock").classList.remove("searching");
+  }
+});
 
 
 function save() {
