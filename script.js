@@ -284,7 +284,7 @@ function openProduct(id) {
 
   renderProductDetail();
 
-  window.scrollTo(0, 0);
+document.getElementById("productPage").scrollTop = 0;
 
 }
 
