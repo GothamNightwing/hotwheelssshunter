@@ -818,3 +818,153 @@ h2{
   }
 
 }
+/* ACCOUNT PAGE */
+
+.account-page {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #050505;
+  color: #fff;
+  overflow-y: auto;
+}
+
+.account-head {
+  height: 70px;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  align-items: center;
+  border-bottom: 1px solid #252525;
+  padding: 0 12px;
+  position: sticky;
+  top: 0;
+  background: #090909;
+  z-index: 2;
+}
+
+.account-head button {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 42px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.account-head span:nth-child(2) {
+  text-align: center;
+  color: #e32620;
+  font-size: 20px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.account-box {
+  width: min(92%, 480px);
+  margin: 45px auto;
+  padding: 30px 24px;
+  background: #101010;
+  border: 1px solid #292929;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+
+.account-box h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.account-box p {
+  margin: 0 0 28px;
+  text-align: center;
+  color: #999;
+}
+
+.account-box label {
+  display: block;
+  margin: 18px 0 7px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.account-box input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background: #181818;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.account-box input:focus {
+  border-color: #e32620;
+}
+
+.account-primary,
+.account-secondary {
+  width: 100%;
+  padding: 15px;
+  margin-top: 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.account-primary {
+  border: 0;
+  background: #e32620;
+  color: #fff;
+}
+
+.account-secondary {
+  border: 1px solid #e32620;
+  background: transparent;
+  color: #fff;
+}
+
+.forgot-btn {
+  display: block;
+  margin: 16px auto 0;
+  border: 0;
+  background: transparent;
+  color: #e32620;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.account-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 28px 0 0;
+  color: #666;
+  font-size: 13px;
+}
+
+.account-divider::before,
+.account-divider::after {
+  content: "";
+  height: 1px;
+  background: #292929;
+  flex: 1;
+}
+
+.account-divider span {
+  color: #777;
+}
+
+@media (max-width: 500px) {
+  .account-box {
+    margin: 25px auto;
+    padding: 25px 18px;
+  }
+
+  .account-head span:nth-child(2) {
+    font-size: 17px;
+  }
+}
