@@ -733,6 +733,74 @@ function showMessage(text) {
 
 }
 
+function openMenuPage(page) {
+  toggleNav();
+
+  if (page === "login") {
+    openAccount();
+  } else {
+    showMessage("This section is coming soon");
+  }
+}
+
+function openAccount() {
+  document.getElementById("accountPage").classList.remove("hidden");
+  document.body.classList.add("no-scroll");
+  showLogin();
+  document.getElementById("accountPage").scrollTop = 0;
+}
+
+function closeAccount() {
+  document.getElementById("accountPage").classList.add("hidden");
+  document.body.classList.remove("no-scroll");
+}
+
+function showLogin() {
+  document.getElementById("loginForm").classList.remove("hidden");
+  document.getElementById("createAccountForm").classList.add("hidden");
+}
+
+function showCreateAccount() {
+  document.getElementById("loginForm").classList.add("hidden");
+  document.getElementById("createAccountForm").classList.remove("hidden");
+}
+
+function createAccount() {
+  const name = document.getElementById("signupName").value.trim();
+  const email = document.getElementById("signupEmail").value.trim();
+  const password = document.getElementById("signupPassword").value;
+  const confirm = document.getElementById("signupConfirm").value;
+
+  if (!name || !email || !password || !confirm) {
+    showMessage("Please fill in all fields");
+    return;
+  }
+
+  if (password.length < 6) {
+    showMessage("Password must be at least 6 characters");
+    return;
+  }
+
+  if (password !== confirm) {
+    showMessage("Passwords do not match");
+    return;
+  }
+
+  showMessage("Account created");
+  showLogin();
+}
+
+function signIn() {
+  const email = document.getElementById("loginEmail").value.trim();
+  const password = document.getElementById("loginPassword").value;
+
+  if (!email || !password) {
+    showMessage("Enter your email and password");
+    return;
+  }
+
+  showMessage("Sign in system will be connected soon");
+}
 
 render();
 updateCount();
