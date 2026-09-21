@@ -182,7 +182,69 @@
 
 </div>
 
+<!-- ACCOUNT PAGE -->
+<div id="accountPage" class="account-page hidden">
 
+  <div class="account-head">
+    <button onclick="closeAccount()">‹</button>
+    <span>HOTWHEELSSSHUNTER</span>
+    <span></span>
+  </div>
+
+  <div class="account-box">
+
+    <div id="loginForm">
+      <h1>Welcome Back</h1>
+      <p>Sign in to your Hotwheelssshunter account</p>
+
+      <label>Email</label>
+      <input id="loginEmail" type="email" placeholder="Enter your email">
+
+      <label>Password</label>
+      <input id="loginPassword" type="password" placeholder="Enter your password">
+
+      <button class="account-primary" onclick="signIn()">Sign In</button>
+
+      <button class="forgot-btn" onclick="showMessage('Password recovery will be connected later')">
+        Forgot Password?
+      </button>
+
+      <div class="account-divider">
+        <span>OR</span>
+      </div>
+
+      <button class="account-secondary" onclick="showCreateAccount()">
+        Create Account
+      </button>
+    </div>
+
+    <div id="createAccountForm" class="hidden">
+      <h1>Create Account</h1>
+      <p>Create your Hotwheelssshunter account</p>
+
+      <label>Name</label>
+      <input id="signupName" type="text" placeholder="Enter your name">
+
+      <label>Email</label>
+      <input id="signupEmail" type="email" placeholder="Enter your email">
+
+      <label>Password</label>
+      <input id="signupPassword" type="password" placeholder="Create a password">
+
+      <label>Confirm Password</label>
+      <input id="signupConfirm" type="password" placeholder="Confirm your password">
+
+      <button class="account-primary" onclick="createAccount()">
+        Create Account
+      </button>
+
+      <button class="forgot-btn" onclick="showLogin()">
+        Already have an account? Sign In
+      </button>
+    </div>
+
+  </div>
+</div>
 <div id="message" class="toast hidden"></div>
 
 <script src="script.js"></script>
