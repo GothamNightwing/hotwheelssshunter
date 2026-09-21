@@ -21,15 +21,26 @@
     🛒<span id="cartCount">0</span>
   </button>
 
-  <nav id="nav" class="side-nav">
-    <button class="nav-close" onclick="toggleNav()">×</button>
-    <a href="#home" onclick="toggleNav()">Home</a>
-    <a href="#stock" onclick="toggleNav()">Stock</a>
-    <button onclick="showMessage('Track Order')">Track Order</button>
-    <button onclick="showMessage('Customer Care')">Customer Care</button>
-    <button onclick="showMessage('Login / Sign In')">Login / Sign In</button>
-  </nav>
-</header>
+<nav id="nav" class="side-nav">
+  <button class="nav-close" onclick="toggleNav()">×</button>
+
+  <a href="#home" onclick="toggleNav()">🏠 Home</a>
+
+  <a href="#stock" onclick="toggleNav()">🛒 Stock</a>
+
+  <button onclick="openMenuPage('track')">📦 Track Order</button>
+
+  <button onclick="openMenuPage('care')">💬 Customer Care</button>
+
+  <button onclick="openMenuPage('login')">👤 Login / Sign In</button>
+
+  <a
+    href="https://www.instagram.com/hotwheelssshunter/"
+    target="_blank"
+    rel="noopener"
+    onclick="toggleNav()"
+  >📸 Instagram</a>
+</nav>
 
 <main id="home">
 
