@@ -380,8 +380,13 @@ function renderProductDetail() {
       </div>
 
 
-      <button class="add-cart"
-              onclick="addCurrentToCart()">
+      <button class="add-cart snipcart-add-item"
+        data-item-id="${p.id}"
+        data-item-name="${p.name}"
+        data-item-price="${p.price}"
+        data-item-description="${p.series} - Mint Condition"
+        data-item-image="https://gothamnightwing.github.io/hotwheelssshunter/${p.image1}"
+        data-item-url="https://gothamnightwing.github.io/hotwheelssshunter/">
         Add to Cart
       </button>
 
