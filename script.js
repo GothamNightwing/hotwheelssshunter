@@ -380,13 +380,8 @@ function renderProductDetail() {
       </div>
 
 
-      <button class="add-cart snipcart-add-item"
-        data-item-id="${p.id}"
-        data-item-name="${p.name}"
-        data-item-price="${p.price}"
-        data-item-description="${p.series} - Mint Condition"
-        data-item-image="https://gothamnightwing.github.io/hotwheelssshunter/${p.image1}"
-        data-item-url="https://gothamnightwing.github.io/hotwheelssshunter/">
+      <button class="add-cart"
+        onclick="addCurrentToCart()">
         Add to Cart
       </button>
 
@@ -561,20 +556,28 @@ function changeDetailQty(delta) {
 }
 
 
-function addCurrentToCart() {
-
-  const qty =
-    Number(
-      document.getElementById(
-        "detailQty"
-      ).textContent
-    );
-
-  addToCart(
-    currentProduct.id,
-    qty
+async function addCurrentToCart() {
+  const qty = Number(
+    document.getElementById("detailQty").textContent
   );
 
+  try {
+    await Snipcart.api.cart.items.add({
+      id: String(currentProduct.id),
+      name: currentProduct.name,
+      price: currentProduct.price,
+      url: "/",
+      quantity: qty,
+      description: currentProduct.series + " - Mint Condition",
+      image: currentProduct.image1
+    });
+
+    Snipcart.api.theme.cart.open();
+
+  } catch (error) {
+    console.error(error);
+    showMessage("Unable to add item to cart");
+  }
 }
 
 
